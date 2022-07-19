@@ -15,7 +15,7 @@ fn main() {
     // Loops over every newline in the penguin_data string.
     for (i, record) in records.enumerate() {
         // This skips the header row.
-        if i == 0 || record.trim().len() == 0 {
+        if i == 0 || record.trim().is_empty() {
             continue;
         }
 
